@@ -1,0 +1,147 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.95em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+input{
+    border: none;
+}
+p{
+    font-size: 0.9rem;
+}
+
+/* utilities */
+.primary-button{
+    background-color: #db0001;
+    color: white;
+    padding: 5px 10px;
+    margin-inline: 5px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+.primary-button:hover{
+    box-shadow: 0px 0px 4px red;
+}
+
+.secondary-button{
+    background-color: transparent;
+    border: 1.5px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-inline: 5px;
+}
+
+.secondary-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* Styling header */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) , url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+nav div img{
+    width: 10px;
+}
+.logo{
+    margin-inline: 5px;
+    width: 150px;
+}
+nav div a:first-child{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-content h1{
+    font-weight: 700;
+    margin-block: 10px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.header-content p{
+    font-weight: lighter;
+    margin-block: 5px 20px;
+}
+.header-content form input[type="email"]{
+    outline: 0;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/* styling sections */
+
+hr{
+    width: 100%;
+}
+.row{
+    margin-block: 40px;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-part{
+    flex-basis: 50%;
+}
+.text-part h2{
+    margin: 15px 0;
+}
+.image-part{
+    flex-basis: 50%;
+}
+.image-part img{
+    width: 90%;
+}
+
+/* styling footer */
+footer{
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #db0001;
+    gap: 40px;
+}
+footer img{
+    width: 200px;
+    border-radius: 50%;
+}
